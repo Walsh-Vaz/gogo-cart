@@ -1,0 +1,103 @@
+h3{
+    margin: 0%;
+}
+
+.main{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar{
+display: grid;
+grid-template-columns: 1fr 2fr 2fr;
+text-align: center;
+}
+
+.title{
+    color: purple;
+    margin-top: 13px;
+}
+
+.navbarSearch{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 16px;
+    height: 30px;
+    width: 520px;
+    border-radius: 10px;
+}
+
+.navbarBtn{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login{
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: solid purple 5px;
+    border-radius: 50px;
+}
+
+.signup{
+    height: 30px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: solid purple 5px;
+    border-radius: 50px;
+}
+
+/* ---------------HomePage--------------- */
+
+.HomePageImage{
+    border:solid purple 5px;
+    border-radius: 20px;
+    background-color: rgb(191, 142, 216);
+    height: 300px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.cardsTitle{
+    text-align: center;
+}
+
+.cards{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    display: inline-flex;
+    border:solid purple 5px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.restoLogo{
+    text-align: center;
+    border:solid purple 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    height: 35px;
+    width: 40px;
+}
+
+.restoName{
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+}
