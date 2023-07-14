@@ -27,14 +27,14 @@ export default function footer(){
                             FAQ
                         </li>
                     </ul>
-                    <div className='FooterBtn'>
+                    {/* <div className='FooterBtn'>
                         <Link className="FooterLogin" to={`/login`}>
                             login
                         </Link>
                         <Link className="FooterSignup" to={`/signup`}>
                             Signup
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             <div className="copyright">© Copyright By Carleton BootCamp Students</div>
         </div>
