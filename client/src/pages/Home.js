@@ -1,7 +1,8 @@
 import React from "react";
 import '../styles.css';
-import NavigationBar from '../components/navbar'
+// import NavigationBar from '../components/navbar'
 import Homepage from '../components/homepage'
+import MainHomePage from '../components/MainHomePage'
 
 
 export default function home() {
@@ -10,9 +11,12 @@ export default function home() {
     // const Title = "GoGoGrocery";
     return (
         <div className='main'>
-        <div>
-            <Homepage/>
-        </div>
+            <div>
+                <MainHomePage/>
+            </div>
+            <div>
+                <Homepage/>
+            </div>
         </div>
     );
 }
