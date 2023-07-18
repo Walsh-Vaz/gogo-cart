@@ -12,3 +12,26 @@
 // elsewhere in the frontend / React, you will check if token exists using useEffect
 // const token = Auth.loggedIn() to get if user is logged in
 // when sending graphQL requests, it also sends token
+
+
+
+class Auth {
+    static loggedIn() {
+      // Check if the user is logged in by looking for the "token" key in localStorage
+      const token = localStorage.getItem('token');
+      return !!token; // Convert token to boolean (true if token exists, false if null or undefined)
+    }
+  
+    static login(token) {
+      // Log in the user by saving the JWT token to localStorage
+      localStorage.setItem('token', token);
+    }
+  
+    static logout() {
+      // Log out the user by removing the "token" key from localStorage
+      localStorage.removeItem('token');
+    }
+  }
+  
+  export default Auth;
+  
