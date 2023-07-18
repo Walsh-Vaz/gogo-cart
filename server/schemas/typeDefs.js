@@ -6,22 +6,27 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    thoughts: [Thought]!
+    orders: [Order]!
   }
 
-  type Thought {
+  type Category {
     _id: ID
-    thoughtText: String
-    thoughtAuthor: String
-    createdAt: String
-    comments: [Comment]!
+    name: String
   }
 
-  type Comment {
+  type Product {
     _id: ID
-    commentText: String
-    commentAuthor: String
-    createdAt: String
+    quantity: Int
+    name: String
+    description: String
+    category: Category
+    price: Float
+    productImage: String 
+  }
+
+  type Order {
+    _id: ID
+    products: [Product]
   }
 
   type Auth {
