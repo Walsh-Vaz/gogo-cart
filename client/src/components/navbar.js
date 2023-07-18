@@ -13,10 +13,16 @@ export default function navbar() {
                     Login
                 </a> */}
                 <Link className="login" to={`/login`}>
-                    login
+                    Login
                 </Link>
                 <Link className="signup" to={`/signup`}>
                     Signup
+                </Link>
+                <Link className="about" to={`/about`}>
+                    About
+                </Link>
+                <Link className="shop" to={`/shop`}>
+                    Shop
                 </Link>
             </div>
         </div>
