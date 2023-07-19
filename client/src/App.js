@@ -7,6 +7,7 @@ import Home from './pages/Home'
 // import NavigationBar from './components/navbar'
 // import Homepage from './components/homepage'
 import Footer from './components/footer'
+import Shop from "./pages/shop"
 // import MainHomePage from './components/MainHomePage'
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
         </Router>
       </div>
