@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles.css"
-
-function shopping(){
-    alert("Oww!!! You Clicked Me");
-}
+import { Link } from 'react-router-dom';
 
 export default function homepage() {
 return(
@@ -47,10 +44,13 @@ return(
                 <h2 className="restoName">Yummy In My Tummy</h2>
             </div>
         </div>
-        <div>
-            <button className ="ShoppingBtn" onClick={shopping}>
-                Start shopping
-            </button>
+        <div className="ShoppingBtnContainer">
+            <Link className ="ShoppingBtn" to={`/shop`}>
+                <button className ="ShoppingBtn">
+                    Start shopping
+                </button>
+            </Link>
         </div>
+
     </div>
 )};

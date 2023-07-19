@@ -10,16 +10,10 @@ export default function MainHomePage(){
             <div className="container">
             <div className='HomePageBtn'>
                 <Link className="HomePageLogin" to={`/login`}>
-                    Login
+                    login
                 </Link>
                 <Link className="HomePageSignup" to={`/signup`}>
                     Signup
-                </Link>
-                <Link className="HomePageAbout" to={`/about`}>
-                    About
-                </Link>
-                <Link className="HomePageShop" to={`/shop`}>
-                    Shop
                 </Link>
             </div>
                 <div className="MainTitle">
@@ -29,14 +23,15 @@ export default function MainHomePage(){
                     position: "absolute",
                     fontFamily: Trucking,
                     fontWeight: '700',
-                    fontSize: '20px',
-                    height: "30px",
-                    width: "36.5%",
-                    right: "31.25%",
+                    fontSize: '50px',
+                    height: "50px",
+                    width: "40%",
+                    right: "29.25%",
                     top: "350px",
                     textAlign: "center",
-                    borderRadius: "20px",
+                    borderRadius: "50px",
                     border: "0",
+                    color:"purple",
                 }}/>
                 <img className="MainHomeBackground" src={background} alt="Main Home BackGround"/>
             </div>
