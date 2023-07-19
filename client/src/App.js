@@ -36,6 +36,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
+import Navbar from './components/navbar';
 import About from './pages/About'; // Import the About component
 import Shop from './pages/Shop'; // Import the Shop component
 import Footer from './components/footer';
@@ -43,7 +44,12 @@ import Footer from './components/footer';
 export default function App() {
   return (
     <>
+    <div>
+    <Navbar />
+    </div>
       <div className='WholeSite'>
+       
+        
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />

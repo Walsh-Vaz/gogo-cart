@@ -77,8 +77,6 @@
 
 // start();
 
-
-
 const express = require("express");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
@@ -86,6 +84,10 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const path = require("path");
+
+const productRoutes = require("./routes/product"); // Corrected the import statement
+// const orderRoutes = require("./routes/order");
+// const userRoutes = require("./routes/user");
 
 dotenv.config();
 const mongoURI = process.env.MONGO_URI;
@@ -115,8 +117,8 @@ const authenticateToken = (req, res, next) => {
 
 // Routes which should handle requests
 app.use("/products", productRoutes);
-app.use("/orders", orderRoutes);
-app.use("/user", authenticateToken, userRoutes);
+// app.use("/orders", orderRoutes);
+// app.use("/user", authenticateToken, userRoutes);
 
 app.use(morgan("dev"));
 
