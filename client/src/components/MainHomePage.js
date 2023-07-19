@@ -10,16 +10,10 @@ export default function MainHomePage(){
             <div className="container">
             <div className='HomePageBtn'>
                 <Link className="HomePageLogin" to={`/login`}>
-                    Login
+                    login
                 </Link>
                 <Link className="HomePageSignup" to={`/signup`}>
                     Signup
-                </Link>
-                <Link className="HomePageAbout" to={`/about`}>
-                    About
-                </Link>
-                <Link className="HomePageShop" to={`/shop`}>
-                    Shop
                 </Link>
             </div>
                 <div className="MainTitle">

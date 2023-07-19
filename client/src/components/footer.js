@@ -1,90 +1,43 @@
-// import React from "react";
-// import '../styles.css';
-// import { Link } from 'react-router-dom';
-
-// export default function footer(){
-//     return (
-//     <div className="footer">
-//         <div className="MainFooterGrid">
-//                 <div className="FooterGrid">
-//                     <div className="FooterTitle">
-//                     GoGoGrocery
-//                     </div>
-//                     <ul className="footerList">
-//                         <li className="list">
-//                             Terms Of Service
-//                         </li>
-//                         <li>
-//                             Careers
-//                         </li>
-//                         <li>
-//                             COVID-19
-//                         </li>
-//                         <li>
-//                             About Us
-//                         </li>
-//                         <li>
-//                             FAQ
-//                         </li>
-//                     </ul>
-//                     {/* <div className='FooterBtn'>
-//                         <Link className="FooterLogin" to={`/login`}>
-//                             login
-//                         </Link>
-//                         <Link className="FooterSignup" to={`/signup`}>
-//                             Signup
-//                         </Link>
-//                     </div> */}
-//                 </div>
-//             <div className="copyright">© Copyright By Carleton BootCamp Students</div>
-//         </div>
-//     </div>
-//     );
-// }
-
-
 import React from "react";
 import '../styles.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-export default function Footer() {
-  return (
+export default function footer(){
+    return (
     <div className="footer">
-      <div className="MainFooterGrid">
-        <div className="FooterGrid">
-          <div className="FooterTitle">
-            GoGoGrocery
-          </div>
-          <ul className="footerList">
-            <li className="list">
-              Terms Of Service
-            </li>
-            <li>
-              Careers
-            </li>
-            <li>
-              COVID-19
-            </li>
-            <li>
-              About Us
-            </li>
-            <li>
-              FAQ
-            </li>
-          </ul>
-          <div className='FooterBtn'>
-            <Link className="FooterLogin" to={`/login`}>
-              Login
-            </Link>
-            <Link className="FooterSignup" to={`/signup`}>
-              Signup
-            </Link>
-          </div>
+        <div className="MainFooterGrid">
+                <div className="FooterGrid">
+                    <a href="http://localhost:3000/" className="FooterTitle">
+                    GoGoGrocery
+                    </a>
+                    <div className="FooterList">
+                        <div className="list">
+                            Terms Of Service
+                        </div>
+                        <div className="list">
+                            Careers
+                        </div>
+                        <div className="list">
+                            COVID-19
+                        </div>
+                        <div className="list">
+                            <a href="http://localhost:3000/about">About</a>
+                        </div>
+                        <div className="list">
+                            FAQ
+                        </div>
+                    </div>
+                    <div className='FooterBtn'>
+                        <a href="http://localhost:3000/login" className="FooterLogin">
+                            login
+                        </a>
+                        <a href="http://localhost:3000/signup" className="FooterSignup">
+                            Signup
+                        </a>
+                    </div>
+                </div>
+            <div className="copyright">© Copyright By Carleton BootCamp Students</div>
         </div>
-        <div className="copyright">
-          © Copyright By Carleton BootCamp Students
-        </div>
-      </div>
     </div>
-  );
+    );
 }
