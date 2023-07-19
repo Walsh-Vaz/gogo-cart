@@ -37,21 +37,20 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    thoughts(username: String): [Thought]
-    thought(thoughtId: ID!): Thought
+    products: [Product]
+    product(productId: ID!): Product
+    orders: [Order]
+    order(orderId: ID!): Order
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addThought(thoughtText: String!, thoughtAuthor: String!): Thought
-    addComment(
-      thoughtId: ID!
-      commentText: String!
-      commentAuthor: String!
-    ): Thought
-    removeThought(thoughtId: ID!): Thought
-    removeComment(thoughtId: ID!, commentId: ID!): Thought
+    addProduct(name: String!, description: String!, price: Float!, quantity: Int!): Product
+    updateProduct(productId: ID!, name: String, description: String, price: Float, quantity: Int): Product
+    deleteProduct(productId: ID!): Product
+    createOrder(productId: ID!, quantity: Int!): Order
+    deleteOrder(orderId: ID!): Order
   }
 `;
 
