@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navigation from "../components/navbar";
 
 // Sample data (replace with your actual data from the backend)
 const products = [
@@ -18,27 +19,32 @@ export default function Shop() {
     };
 
     return (
-        <div className="shop-container">
-            <h2>Shop Now</h2>
-            <div className="product-list">
-                {products.map((product) => (
-                <div key={product.id} className="product-card">
-                    <h3>{product.name}</h3>
-                    <p>{product.description}</p>
-                    <p>${product.price.toFixed(2)}</p>
-                    <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+        <div>
+            <Navigation/>
+            <div className="shop-container">
+                <div className='Shopping'>
+                    <h2 className='ShopTitle'>Shop Now</h2>
+                    <div className="product-list">
+                        {products.map((product) => (
+                        <div key={product.id} className="product-card">
+                            <h3>{product.name}</h3>
+                            <p>{product.description}</p>
+                            <p>${product.price.toFixed(2)}</p>
+                            <button className='ShopBtn' onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                        </div>
+                        ))}
+                    </div>
                 </div>
-                ))}
-            </div>
-            <div className="cart">
-                <h3>Shopping Cart</h3>
-                <ul>
-                {selectedProducts.map((product) => (
-                    <li key={product.id}>
-                        {product.name} - ${product.price.toFixed(2)}
-                    </li>
-                ))}
-                </ul>
+                <div className="cart">
+                    <h2 className='CartName'>Shopping Cart</h2>
+                    <ul className='CartLists' >
+                        {selectedProducts.map((product) => (
+                        <li className='CartList' key={product.id}>
+                            {product.name} - ${product.price.toFixed(2)}
+                        </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     );

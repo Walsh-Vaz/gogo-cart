@@ -44,10 +44,13 @@ return(
                 <h2 className="restoName">Yummy In My Tummy</h2>
             </div>
         </div>
-        <Link className ="ShoppingBtn" to={`/shop`}>
-            <button className ="ShoppingBtn">
-                Start shopping
-            </button>
-        </Link>
+        <div className="ShoppingBtnContainer">
+            <Link className ="ShoppingBtn" to={`/shop`}>
+                <button className ="ShoppingBtn">
+                    Start shopping
+                </button>
+            </Link>
+        </div>
+
     </div>
 )};
